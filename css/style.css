@@ -1,0 +1,71 @@
+/* fuente de google fonts directamente a css */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box; /* Con border-box los contenedores no se sobrepondran uno en otro a menos de que se vuelva a indicar */
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;/* Tamaño entre renglones */
+}
+
+ul{
+    list-style-type: none; /* Define el estilo de los marcadores de lista*/
+}
+
+a{
+    text-decoration: none; /* Quita las lineas inferiores en las anclas */
+    color: #333;
+}
+
+h1, h2{
+    font-weight:300; /* Define el grosor de las letras */
+    line-height: 1.2;/* Tamaño entre renglones */
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%; /* Le da un tamaño de el 100% a las imagenes para que no se salgan del contenedor */
+}
+
+.navbar{
+    background-color: #231e23;
+    color: #39a6a3;
+    height: 70px; /*Define la altura del contenedor*/
+}
+    .navbar ul{
+        display: flex;
+    }
+    .navbar .flex{
+        justify-content: space-between; /*Alineacion horizontal, space-between los aleja a los extremos*/
+    }
+    .navbar a{
+        color: #39a6a3;
+        padding: 10px;
+        margin: 0 5px;
+    }
+        .navbar a:hover{
+            border-bottom: 2px #bf1363 solid; /* Coloca una linea debajo del grosor, color y textura seleccionados*/
+        }
+.container{
+    max-width:1100px; /* Define el ancho maximo del contenedor*/
+    justify-content: center; /*Alineacion horizontal*/
+    margin: 0 auto; /* Vertical | Horizontal*/
+    overflow: auto; /* Evita que se desborde*/
+    padding: 0 40px; /* Vertical /Horizontal*/
+    
+}
+
+.flex{
+    display: flex;
+    align-items: center;  /*Alineacion vertical*/
+    height: 100%;
+}
