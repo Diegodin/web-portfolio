@@ -1,6 +1,11 @@
 /* fuente de google fonts directamente a css */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
+:root{
+    --primary-color:#231e23;/* Define un color primaro para usarlo con var(--primary-color) */
+    
+}
+
 *{
     box-sizing: border-box; /* Con border-box los contenedores no se sobrepondran uno en otro a menos de que se vuelva a indicar */
     padding: 0;
@@ -11,6 +16,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     color: #333;
     line-height: 1.6;/* Tamaño entre renglones */
+    background: #deeeea;
 }
 
 ul{
@@ -35,9 +41,9 @@ p{
 img{
     width: 100%; /* Le da un tamaño de el 100% a las imagenes para que no se salgan del contenedor */
 }
-
+/* Navbar */
 .navbar{
-    background-color: #231e23;
+    background-color: var(--primary-color);
     color: #39a6a3;
     height: 70px; /*Define la altura del contenedor*/
 }
@@ -55,6 +61,36 @@ img{
         .navbar a:hover{
             border-bottom: 2px #bf1363 solid; /* Coloca una linea debajo del grosor, color y textura seleccionados*/
         }
+        
+        /* .logo{
+
+        } */
+            .logo .logo2{
+                color: #bf1363;
+            }
+        
+            .logo .logo3{
+                color: #deeeea;
+            }
+        
+            .showcase h1,h2{
+                color: #bf1363;
+            }
+/* Showcase */
+.showcase{
+    height:400px;
+    background-color: var(--primary-color);
+    color: #deeeea;
+    position: relative;/* Se posiciona relativamente a su posicion inicial */
+}
+
+ .showcase h1{
+     font-size: 40px;
+ }
+ .showcase p{
+     margin: 20px 0;
+ }
+/* Utilities */
 .container{
     max-width:1100px; /* Define el ancho maximo del contenedor*/
     justify-content: center; /*Alineacion horizontal*/
@@ -68,4 +104,9 @@ img{
     display: flex;
     align-items: center;  /*Alineacion vertical*/
     height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:300px 200px;
 }
